@@ -16,14 +16,15 @@ Tujuan dari konfigurasi ini adalah untuk mengoptimalkan distribusi trafik intern
 
 ### Aktifkan Safe Mode
 
-Dikarenakan saya remote menggunakan VPN, Untuk menghindari misconfigurasi yang menyebabkan ter log-out dari router, saya mengaktifkan Safe Mode
+Dalam proses konfigurasi melalui koneksi VPN, saya mengaktifkan Safe Mode sebagai tindakan preventif untuk mencegah kehilangan akses akibat kesalahan konfigurasi,
+sekaligus menyediakan mekanisme rollback atau fall-back otomatis.
 
 ### Mangle Bypass Koneksi Lokal
 ```Shell
 /ip firewall mangle
 add action=accept chain=prerouting dst-address-list=LAN src-address-list=LAN
-add action=accept chain=prerouting dst-address=192.168.1.1 in-interface=\ether1-ISP
-add action=accept chain=prerouting dst-address=192.168.1.1 in-interface=\ether2-50MBPS
+add action=accept chain=prerouting dst-address=192.168.1.0/24 in-interface=\ether1-ISP
+add action=accept chain=prerouting dst-address=192.168.1.0/24 in-interface=\ether2-50MBPS
 ```
 ### Mangle Mark Connection
 ```Shell
