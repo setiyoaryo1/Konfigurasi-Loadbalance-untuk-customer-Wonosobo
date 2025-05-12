@@ -1,4 +1,4 @@
-# Konfigurasi-Loadbalance-untuk-customer-Wonosobo
+# Konfigurasi-Loadbalance-untuk-customer-Upwork
 
 Nama saya Setiyo Aryo Winata. Pada repositori ini, saya mendokumentasikan konfigurasi Load Balance dengan metode PCC (Per Connection Classifier) pada perangkat MikroTik.
 
