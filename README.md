@@ -70,6 +70,14 @@ add add-default-route=no interface=ether1-ISP
 add add-default-route=no interface=ether2-50MBPS use-peer-dns=no
 ```
 
+![Firewall](images/Firewall.png)
+
+## Disclaimer
+
+Perlu diketahui bahwa perangkat MikroTik yang digunakan sudah memiliki konfigurasi dasar (basic configuration) sebelumnya.
+Pada dokumentasi ini, saya hanya menambahkan konfigurasi untuk implementasi Load Balance menggunakan metode PCC (Per Connection Classifier) guna mengoptimalkan penggunaan dua jalur internet yang tersedia.
+
+Terimakasih.
 
 
 
