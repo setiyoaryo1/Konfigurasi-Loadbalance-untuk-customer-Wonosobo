@@ -11,7 +11,8 @@ ISP 2 dengan bandwidth 50 Mbps
 Tujuan dari konfigurasi ini adalah untuk mengoptimalkan distribusi trafik internet secara seimbang dan stabil, dengan tetap menjaga kestabilan koneksi pada sesi tertentu seperti login, streaming, maupun VPN.
 
 
-`/ip firewall nat
+```shell
+/ip firewall nat
 add chain=srcnat out-interface=WAN1 action=masquerade`
 
 
